@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.5;
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+img {
+  width: 100%;
+}
+
+.navbar {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.navbar .logo div {
+  display: flex;
+  width: 250px;
+  align-items: center;
+}
+.navbar .logo div h1 {
+  padding: 0 0.5rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.navbar .logo div i {
+  color: red;
+}
+.navbar .searchBar {
+  display: flex;
+  align-items: center;
+}
+.navbar .searchBar input {
+  width: 90%;
+  padding: 1rem;
+  border: 1px solid darkgrey;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.navbar .tools {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.5rem;
+}
+.navbar i:hover {
+  color: red;
+  cursor: pointer;
+}
+.content {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.content div ul {
+  display: flex;
+  flex-direction: column;
+  border-bottom: darkgrey 1px solid;
+}
+.content div ul li {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.content div ul li i {
+  margin: 0 0.5rem;
+}
+.content div ul li:hover {
+  cursor: pointer;
+  color: red;
+}
+.rightSection {
+  width: 90%;
+  margin: auto;
+}
+.rightSection > div {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+.rightSection > div i {
+  padding: 0.5rem;
+}
+.rightSection .cards {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 1rem;
+  align-items: flex-start;
+}
+.rightSection .cards:hover {
+  border: 1px darkgrey solid;
+  cursor: pointer;
+}
+.rightSection .cards h1:hover {
+  color: red;
+}
